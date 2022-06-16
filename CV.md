@@ -2,7 +2,7 @@
 
 ## **Name and Surname:**
 *Sviatoslav Zaikin*
-![avatar]("C:\Users\Святослав\Desktop\rsschool-cv\Avatar.jpg "Photo")
+<image src="file:///C:/Users/Святослав/Pictures/Avatar.jpg" alt="Photo">
 
 ## **Contacts:**
 * Mobile phone: *+79818407885*
