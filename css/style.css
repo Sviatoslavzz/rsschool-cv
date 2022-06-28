@@ -11,10 +11,25 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 17px;
+   font-weight: 500;
+   line-height: 1.5;
+   color: rgba(255, 255, 255, 0.719);
  }
 
  .header {
-   border: 2px color red;
+   height: 60px;
+   background: rgb(50,49,49);
+   background: linear-gradient(90deg, rgba(50,49,49,1) 0%, rgba(0,0,0,1) 50%, rgba(54,54,54,1) 100%);
+   position: fixed;
+   top: 0;  
+   z-index: 100;  
+   width: 100%
+ }
+ 
+ .nav {
+   background-color: none;
  }
 
  .container {
@@ -28,26 +43,37 @@
    align-items: center;
    list-style: none;
    flex-wrap: wrap;
+   margin: 10px;
+   padding: 0;
  }
 
  .nav-link {
-   padding: 0 0;
    line-height: 50px;
-   font-family: system-ui;
    text-decoration: none;
    text-transform: uppercase;
-   color: black;
-   font-size: 17px;
+   font-size: 20px;
    transition: .3s;
+   letter-spacing: 3px;
+   color: rgba(255, 255, 255, 0.719);
+ }
+
+ .main {
+   margin-top: 60px;
+   margin-bottom: 50px;
+   background: rgb(50,49,49);
+   background: linear-gradient(90deg, rgba(50,49,49,1) 0%, rgba(0,0,0,1) 50%, rgba(54,54,54,1) 100%);
  }
  .nav-link:hover { 
-   background: rgb(196, 192, 192);
+   color: rgb(255, 255, 255);
  }
 
  #Name {
    width: 100%;
+   flex-wrap: wrap;
+   display: flex;
+   justify-content: center;
  }
- #profile {
+ #Contacts {
    flex-wrap: none;
    width: 100%;
  }
@@ -60,16 +86,20 @@
  .section {
    width: 50%;
    padding: 5px;
-   margin-top: 5px; margin-bottom: 5 px;
-   border: 1px solid transparent; border-style: solid dotted;
+   margin-top: 10px; margin-bottom: 10px;
+   text-align: center;
  }
 
  .section-title {
-   font-family: system-ui;
    text-transform: uppercase;
-   color: black;
-   font-size: 17px;
+   color: rgba(255, 255, 255, 0.719);
+   font-size: 20px;
    text-align: center;
+   letter-spacing: 5px;
+ }
+
+ .h1 {
+   letter-spacing: 2px;
  }
 
  @media (max-width: 768px) {
@@ -79,7 +109,6 @@
  }
  
  .p2 {
-   color: blue;
    text-align: center;
  }
 
@@ -88,4 +117,23 @@
    display: block;
    margin-left: auto;
    margin-right: auto;
+ }
+
+ .footer {
+   height: 50px;
+   background: rgb(50,49,49);
+   background: linear-gradient(90deg, rgba(50,49,49,1) 0%, rgba(0,0,0,1) 50%, rgba(54,54,54,1) 100%);
+   position: fixed;
+   bottom: 0;  
+   z-index: 100;  
+   width: 100%
+ }
+ .nav-list-footer {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+   flex-wrap: wrap;
+   margin: 10px;
+   padding: 0;
  }
